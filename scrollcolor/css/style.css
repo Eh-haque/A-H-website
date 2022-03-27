@@ -1,0 +1,22 @@
+.section-color {
+  height: 80vh;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.yellow {
+  background-color: #e3d74f;
+}
+
+.teal-deep {
+  background-image: linear-gradient(66deg, #000, #787878 100%, #13141524);
+  color: white;
+}
+.white {
+  background-color: rgb(255, 255, 255);
+}
+
+.light {
+  background-color: #d4d4d4;
+}

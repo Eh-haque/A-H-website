@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Roboto:wght@100;300;400;900&display=swap');
+
+
+body {
+	/* font-family: 'Karla', sans-serif;
+	font-family: 'Roboto', sans-serif; */
+	font-family: 'Roboto', sans-serif !important;
+}
+	/* Preloader */
+::selection {
+    background: #fff7b6;
+    color: #000;
+}
+.overship {
+    background-color: #e3d74f;
+    text-align: center;
+    color: #a01111;
+    position: relative;
+    z-index: 5000;
+    top: 0;
+    transition: all .3s linear;
+    padding: 5px 0px;
+}
+.overship p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+	font-size: 14px;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(images/Iphone-spinner.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+  z-index: 99999999;
+}
+
+
+
+
+/* article */
+.matter {
+    background: #141414;
+    height: 95vh;
+    padding: 20vh 0px;
+    transition: background-color .7s,color .7s;
+}
+.matter:hover {
+    background: #e3d74f;
+}
+.matter h2 {
+    font-size: 9.53vw;
+    color: #FFF;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+/* article */
+
+/* Contact */
+.contactFrom {
+    background: #e3d74f;
+	color:#000;
+	height: 95vh;
+    padding: 20vh 0px;
+    transition: background-color .8s,color .8s;
+}
+.contactFrom:hover {
+    background: url(images/contact.jpg);
+	color: #FFF;
+	transition: background-color 10s,color 10s;
+}
+.contactFrom:hover {
+    background: url(images/c.jpg);
+    transition: background-color 10s,color 10s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+	z-index:2;
+	transition: opacity .3s ease-in-out .3s;
+}
+.contactFrom:hover::after {
+    content: '';
+    position: absolute;
+    background: #000000ba;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+	transition: background-color 10s,color 10s;
+}
+.homeFrom h3 {
+    border-color: #aaa;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 32.1px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto 15px;
+    clear: both;
+    font-weight: normal;
+}
+.contactFrom label {
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.contactFrom input,.contactFrom textarea {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid #aaa;
+    outline: 0;
+    background: #fff0;
+    color: #f7f3f3;
+    margin-bottom: 15px;
+    -webkit-appearance: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.contactFrom input {
+    height: 44px;
+    min-height: 44px;
+}
+.contactFrom textarea {
+    height: 144px;
+    min-height: 144px;
+}
+/* Contact */
+
+
+/* Nav */
+.navbarbox {
+    z-index: 99;
+    width: 100%;
+    padding: 20px 0px;
+    background-image: linear-gradient(66deg, #000, #787878 100%, #13141524);
+}
+.logo img {
+    width: 70px;
+}
+.wrap {
+    position: relative;
+}
+.wrap .logo a{
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.wrap .nav-links {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding: 10px 15px;
+    border-radius: 0;
+    margin: 10px 10px;
+    border: 1px solid #f5f5f50f;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 3s;
+    transition: transform 2s,-webkit-transform 2s;
+    transition: transform 2s;
+    text-transform: uppercase;
+}
+.nav-links li a:hover {
+    background: #d1bfbf14;
+    color: #FFF;
+}
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links li:hover .mega-box {
+    transition: all 02s ease;
+    top: 35px;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 64px;
+}
+
+.mega-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    margin-top: 3px;
+}
+.mega-box .cont {
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+	justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 15%);
+}
+.mega-box .cont .sow{
+  width: 30%;
+  line-height: 45px;
+}
+.cont .sow img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cont .sow b{
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sow .mega-links li a {
+    color: #d9d9d9;
+    font-size: 14px;
+    display: block;
+    padding: 0px 0px 0px 10px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin: 0px 0px 10px 10px;
+    /* border: .5px solid #fd9034; */
+    border: .5px solid #d9d9d9;
+    /* color: #fd9034; */
+}
+
+.sow .mega-links li a:hover{
+  color: #f2f2f2;
+}
+.wrap .btn{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrap .btn.close-btn{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+@media screen and (max-width: 970px) {
+  .wrap .btn{
+    display: block;
+  }
+.wrap .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #242526;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgb(0 0 0 / 18%);
+    transition: all 03s ease;
+    z-index: 9;
+}
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .nav-links li{
+    margin: 15px 10px;
+  }
+  .nav-links li a{
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+
+ 
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  .nav-links .desktop-item{
+    display: none;
+  }
+  .nav-links .mobile-item {
+    display: block;
+    padding-left: 20px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    border-radius: 0;
+    margin: 10px 10px;
+    border: 1px solid #f5f5f50f;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 3s;
+    transition: transform 2s,-webkit-transform 2s;
+    transition: transform 2s;
+    text-transform: uppercase;
+}
+  .nav-links .mobile-item:hover{
+    background: #3A3B3C;
+  }
+  .mega-box{
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 02s ease;
+  }
+ 
+  .mega-box .cont .sow{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .cont .sow:nth-child(1),
+  .mega-box .cont .sow:nth-child(2){
+    border-top: 0px;
+  }
+  .cont .sow .mega-links{
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .sow .mega-links li{
+    margin: 0;
+  }
+  .cont .sow b{
+    font-size: 19px;
+  }
+}
+nav input{
+  display: none;
+}
+ul.img-title {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+ul.mega-links {
+    width: 60%;
+	margin: 0;
+    padding: 0;
+}
+/* Nav */
+
+
